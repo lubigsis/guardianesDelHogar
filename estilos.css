@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #8E806A;
+    color: #fff;
+    background-color: #bfd9c8;
+    font-size: 16px;
+    background-color: #bfd9c8;
+    background-color: #c7d9cd;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231f6049' fill-opacity='0.1'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Patrick Hand', cursive;
+    
+    
+}
+
+.container{
+    width: 93%;
+    margin: auto;    
+}
+
+.container .nav-main ul li a{
+    color: #417046;
+    text-decoration: none;
+    padding: 2px;
+   text-align: center;
+}
+
+.container .nav-main ul li a:hover{
+    border-bottom: 2px solid #54915b;
+}
+
+.container .nav-main .titulo-logo h1{
+    font-family: 'Rubik Beastly', cursive;
+    letter-spacing: 7px;
+    font-size: 45px;
+    font-weight: 100;
+    color: #519259;
+    margin-left: 12px;   
+  
+}
+
+.container .nav-main ul{
+    list-style: none;
+    display: flex;
+}
+
+.container .nav-main ul li{
+    padding: 12px;
+}
+
+
+
+
+/*-------------------------------------------------Navegación-----------------------------------------------*/
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 30px 0 10px 0;
+}
+
+.nav-brand{
+    width: 24px;
+}
+
+.titulo-logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.container .nav-main .nav-menu{
+    display: flex;
+    justify-content: end;
+}
+
+.lupita{
+    color: #519259;
+}
+
+.lupita:hover{
+   color:  rgb(53, 100, 14);
+   border-bottom: none;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+/*---------------------------------------MAIN----------------------------------------------------*/
+.contendor-main{
+    width: 98%;
+    margin: auto;
+    height: 530px;
+    background: url(portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+.btn-main{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background: rgb(150, 32, 32);
+    border: 1px solid rgb(231, 76, 76);
+    margin-top: 80px;
+}
+
+.btn-main:hover{
+    opacity: .8;
+}
+
+.btn-main a{
+    color: #fff;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sobre{
+    margin-right: 3px;
+}
