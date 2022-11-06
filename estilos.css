@@ -121,10 +121,12 @@ hr{
     background: #972020;
     border: 1px solid rgb(231, 76, 76);
     margin-top: 80px;
+    transition: all 0.4s ease-in-out;
 }
 
 .btn-main:hover{
-    opacity: .8;
+    box-shadow: 0px 0px 8px rgb(21, 50, 23);
+    color: #0a0f0b;
 }
 
 .btn-main a{
@@ -140,6 +142,14 @@ hr{
 
 /*------------------------------------------------------------------------CARDS-PRODUCTOS-----------------------------------------------------*/
 
+main h2{
+    font-size: 30px;
+    font-weight: normal;
+    color: #1c2b1e;
+    letter-spacing: 3px;
+    margin: 20px;
+    text-align: center;
+}
 
 .cards{
     width: 100%;
@@ -156,9 +166,9 @@ hr{
 }
 
 .cards div{
-    border: 4px solid #fff;
+    border: 4px solid rgb(245, 5, 5);
     padding: 7px;
-    background: #253b27;
+   /* background: #253b27;*/
     color: #fff;
     text-align: center;
     border-radius: 5px;
@@ -174,7 +184,7 @@ hr{
 }
 
 .cards h3{
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px 0;
     font-weight: normal;
     letter-spacing: 2px;
@@ -184,6 +194,7 @@ hr{
 .cards p{
     letter-spacing: 1px;
     margin-bottom: 15px;
+    font-size: 15px;
 }
 
 .cards a{
@@ -199,16 +210,10 @@ hr{
 }
 
 .cards a:hover{
-   opacity: 0.7;
-}
-
-main h2{
-    font-size: 30px;
-    font-weight: normal;
-    color: #1c2b1e;
-    letter-spacing: 3px;
-    margin: 20px;
-    text-align: center;
+    box-shadow: 0px 0px 8px rgb(21, 50, 23);
+    color: #fff;
+    transform: scale(1.1);
+    transition: transform 1s linear;
 }
 
 /*----------------------------------------------------------------------------------BANNER UNO-------------------------------------------------------*/
@@ -271,8 +276,7 @@ main h2{
 .cards-sucursales .sucursal-individual{
     /*border: 2px solid black;*/
     width: 27%;
-    height: 300px;
-    
+    height: 300px;    
 }
 
 .cards-sucursales .sucursal-individual iframe{
@@ -280,7 +284,7 @@ main h2{
     height: 200px;
     border: none;
     padding-bottom: 5px;
-    
+    border-radius: 20%;
 }
 
 .cards-sucursales .sucursal-individual h3{
@@ -303,15 +307,16 @@ main h2{
     width: 100%;
     max-width: 1200px;
     height: 100vh;
-    background:#eaf1ec;
     margin: 60px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(cactus-form.jpg);
+   /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(cactus-form.jpg)*/;
     background-size: cover;
     background-position: center;
-    border: 2px solid rgb(13, 243, 25);
+    /*border: 2px solid #14bc1c;*/
+    background-color: #faf6f6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23fcdede' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 
@@ -324,19 +329,21 @@ main h2{
     margin: 5px;
     text-align: center;
     align-items: center;
-    border: 1px solid rgb(13, 243, 25);
+    border: 1px solid #972020; 
+    box-shadow: 0px 0px 8px rgb(21, 50, 23);/*
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);*/
+    background: #fff;
    
 }
 
 .seccion-formulario .form-body h3{
-    color: #fff;
+    color: #000;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 23px;
     text-align: center;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 10px 0;
 } 
 
 .form-body img{
@@ -353,16 +360,16 @@ main h2{
     width: 95%;
     padding: 20px;
     border-radius: 2px;
-   border: 2px solid rgb(13, 243, 25);
-    background: transparent;
+    border: 2px solid #972020;
+   /* background: transparent;*/
     font-size: 15px;
     margin-bottom: 20px;
-   border-top: none;
-   border-left: none;
-   border-right: none;
-   border-bottom: 2px solid rgb(13, 243, 25);
-   outline: none; /* outline: none;*/ /*se utiliza para establecer el mismo grosor, estilo y/o anchura de todos los perfiles de un elemento.*/
-   color: rgb(13, 243, 25);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #972020;
+    outline: none; /* outline: none;*/ /*se utiliza para establecer el mismo grosor, estilo y/o anchura de todos los perfiles de un elemento.*/
+    color: #000;
 }
 
 
@@ -374,49 +381,213 @@ main h2{
 }
 
 .form button{
-    width: 70%;
+    width: 60%;
     height: 45px;
-    border-radius: 55px;
-    background: rgba(255, 255, 255, 0.137);
-    color: rgb(13, 243, 25);
+    border-radius: 15px;
+    background-color: #972020;
+    color: #fff;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    border: none;
+    border: 1px solid rgb(231, 76, 76);
     margin-bottom: 10px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 
+
+
 .form button:hover{
-    box-shadow: 0px 0px 8px rgb(13, 243, 25);
-    color: #fff;
+    box-shadow: 0px 0px 8px rgb(21, 50, 23);
+    color: #0a0f0b;
 }
 
 /*-----------------------------------------------------------------REDES-SOCIALES--------------------------------*/
 
 .social{
-    margin: 50px;
-    border: 1px solid purple;
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    margin: 50px auto;
+    /*border: 3px solid purple;*/
+   /* background-color: #54915b;*/
 }
 
-.social p{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+.derecha{
+    height: 100vh;
+    width: 30%;
+   /* border: 2px solid blue;*/
+    background-image: url(logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .social .links-social{
+    width: 70%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+   /* border: 2px solid orange;*/
 }
 
-.links-social a{
-    margin: 0 30px;
+.social .links-social p{
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #1b251d;
 }
 
-.links-social a i{
-    font-size: 50px;
+
+.social .links-social a{
+    margin: 30px;
 }
 
+.social .links-social a i{
+    font-size: 40px;
+    color: #000;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 5px  10px rgb(0, 0, 0, .35);
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.social .links-social a .fa-facebook-f{  /*Escribo esto porque quedaba ovalado el icono de fb  */
+    font-size: 45px;
+    width: 70px;
+    
+}
+
+.social .links-social a .fa-facebook-f:hover{
+    background: #3b5998;
+    color: #fff;
+    box-shadow: 0 0 15px #3b5998,
+                0 0 45px #3b5998,
+                0 0 75px #3b5998,
+                0 0 115px #3b5998;
+}
+
+.social .links-social a .fa-twitter:hover{
+    color: #fff;
+    background-color: #00acee;
+    box-shadow: 0 0 15px #00acee,
+                0 0 45px #00acee,
+                0 0 75px #00acee,
+                0 0 115px #00acee;
+}
+
+
+.social .links-social a .fa-instagram:hover{
+    color: #fff;
+    background: radial-gradient(#E1306C, #833AB4);
+    box-shadow: 0 0 15px #C13584,
+                0 0 45px #C13584,
+                0 0 75px #C13584,
+                0 0 115px #C13584;
+}
+
+/*---------------------------------------------------------------------------------footer----------------------------------*/
+
+.footer{
+    width: 100%;
+    max-width: 1200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red;*/
+}
+
+.footer .seccion-footer1{
+  /*  border: 2px solid blue;*/
+}
+
+.footer .seccion-footer1 .footer-formulario{
+    background: #ebedf3;
+}
+
+.footer .seccion-footer1 .footer-formulario h4{
+    font-size: 17px;
+    color: #1b251d;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.footer .seccion-footer1 .footer-formulario .footer-inputs{
+  /*  border: 2px solid green;*/
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer .seccion-footer1 .footer-formulario .footer-inputs .footer-input-email{
+    margin-right: 20px;
+    width: 30%;
+    height: 30px;
+    border: none;
+}
+
+.footer .seccion-footer1 .footer-formulario .footer-inputs .footer-submit{
+    cursor: pointer;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background: #972020;
+    border: 1px solid rgb(231, 76, 76);
+    margin-top: 80px;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer .seccion-footer1 .footer-formulario .footer-inputs .footer-submit:hover{
+    box-shadow: 0px 0px 8px rgb(21, 50, 23);
+    color: #0a0f0b;
+}
+
+
+
+/*------------------------------------------------*/
+
+.footer .seccion-footer2{
+  /*  border: 2px solid orange;*/
+  background: #faf6f6;
+}
+
+.footer .seccion-footer2 .footer-redes{
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .seccion-footer2 .footer-redes a i{
+    font-size: 25px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    background: #0a0f0b;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.footer .seccion-footer2 .footer-redes a{
+    margin: 20px;
+    background: none;
+}
+
+.footer .seccion-footer2 .footer-redes a .fa-facebook-f{  
+    font-size: 27px;
+    width: 55px;
+    
+}
+
+.footer .seccion-footer2 .footer-redes a i:hover{
+    transform: rotate(45deg);
+    background: red;
+}
